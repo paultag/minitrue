@@ -1,8 +1,5 @@
 from gi.repository import NetworkManager, NMClient
 
-nmc = NMClient.Client.new()
-devs = nmc.get_devices()
-
 
 def ap_info(ap, active_bssid):
     frequency = ap.get_frequency()
@@ -19,6 +16,9 @@ def ap_info(ap, active_bssid):
 
 
 def probe():
+    nmc = NMClient.Client.new()
+    devs = nmc.get_devices()
+
     payload = []
     for dev in devs:
         if dev.get_device_type() == NetworkManager.DeviceType.WIFI:
