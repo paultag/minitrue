@@ -30,11 +30,15 @@ def purge_cache():
 
 
 def update(datas):
-    response = requests.patch(
+    response = requests.post(
         API_BASE.format(**config),
-        data=json.dumps(list(datas))
+        data={
+            "upload": json.dumps(list(datas)),
+            "config": json.dumps(config),
+        },
     )
     if int(response.status_code) != 200:
+        print(response.text)
         log("Bad status: {}".format(response.status_code))
         raise ValueError("Badstatus.")
 

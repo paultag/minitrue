@@ -25,4 +25,4 @@ def run():
             "time": int(dt.datetime.utcnow().timestamp()),
             "data": payload
         })
-        time.sleep(6)
+        time.sleep(3)
