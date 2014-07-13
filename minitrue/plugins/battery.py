@@ -14,7 +14,7 @@ def vread(end):
         maxv = vread_f('energy_full')
         curv = vread_f('energy_now')
 
-    return curv / maxv
+    return (curv / maxv) * 100
 
 
 def probe():
