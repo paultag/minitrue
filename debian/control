@@ -1,0 +1,12 @@
+Source: minitrue
+Section: misc
+Priority: optional
+Maintainer: Paul Tagliamonte <paultag@debian.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: minitrue
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Thing
+ SStuff.
