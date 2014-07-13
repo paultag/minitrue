@@ -1,4 +1,5 @@
 files
-tmperamental.debhelper.log
-tmperamental.substvars
-tmperamental
+minitrue.debhelper.log
+minitrue.substvars
+minitrue
+minitrue.postrm.debhelper
