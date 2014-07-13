@@ -1,3 +1,9 @@
 *swp
 *pyc
 *minitrue*egg*
+.pybuild/
+debian/minitrue.debhelper.log
+debian/minitrue.postinst.debhelper
+debian/minitrue.prerm.debhelper
+debian/minitrue.substvars
+debian/minitrue/

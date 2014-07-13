@@ -1,0 +1,10 @@
+[Unit]
+Description=minitrue
+Author=Paul R. Tagliamonte <tag@pault.ag>
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/minitrued
+
+[Install]
+WantedBy=multi-user.target
